@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Backgrounds for Different Temperatures */
+.cold {
+  background: linear-gradient(to bottom, #00f, #b3e5fc); /* Cold blues */
+}
+
+.cool {
+  background: linear-gradient(to bottom, #4fc3f7, #e1f5fe); /* Cool light blues */
+}
+
+.warm {
+  background: linear-gradient(to bottom, #ffeb3b, #ffc107); /* Warm yellows */
+}
+
+.hot {
+  background: linear-gradient(to bottom, #ff5722, #ff9800); /* Hot reds/oranges */
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-box {
+  margin-top: 20px;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #777;
+}
+
+.weather-box {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-app {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .weather-box {
+      font-size: 40px;
+  }
+
+  .location {
+      font-size: 20px;
+  }
+
+  .date {
+      font-size: 16px;
+  }
+
+  .weather {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-box {
+      font-size: 35px;
+  }
+
+  .location {
+      font-size: 18px;
+  }
+
+  .date {
+      font-size: 14px;
+  }
+
+  .weather {
+      font-size: 16px;
+  }
+}
